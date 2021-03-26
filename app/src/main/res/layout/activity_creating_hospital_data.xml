@@ -28,7 +28,7 @@
             android:background="@drawable/ic_curve"
             android:drawableLeft="@drawable/ic_header"
             android:drawablePadding="15dp"
-            android:hint="Name of Hospital "
+            android:hint="Hospital Name "
             android:imeOptions="actionNext"
             android:inputType="text"
             android:padding="15dp"
@@ -42,9 +42,9 @@
             android:layout_marginHorizontal="30dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/ic_curve"
-            android:drawableLeft="@drawable/ic_user"
+            android:drawableLeft="@drawable/ic_header"
             android:drawablePadding="15dp"
-            android:hint="Last Name"
+            android:hint="Area"
             android:imeOptions="actionNext"
             android:inputType="text"
             android:padding="15dp"
@@ -52,47 +52,111 @@
             android:textColorHint="#000" />
 
         <EditText
-            android:id="@+id/txt_age"
+            android:id="@+id/txt_NOD"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/ic_curve"
-            android:drawableLeft="@drawable/ic_baseline_child_care_24"
+            android:drawableLeft="@drawable/ic_curve"
             android:drawablePadding="10dp"
-            android:hint="Age"
+            android:hint="Number of Doctors"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:padding="15dp"
+            android:textColor="#000"
+            android:textColorHint="#000" />
+        <EditText
+            android:id="@+id/txt_NON"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_curve"
+            android:drawableLeft="@drawable/ic_curve"
+            android:drawablePadding="10dp"
+            android:hint="Number of Nurse"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:padding="15dp"
+            android:textColor="#000"
+            android:textColorHint="#000" />
+        <EditText
+            android:id="@+id/txt_Beds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_curve"
+            android:drawableLeft="@drawable/ic_curve"
+            android:drawablePadding="10dp"
+            android:hint="Number of Beds"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:padding="15dp"
+            android:textColor="#000"
+            android:textColorHint="#000" />
+        <EditText
+            android:id="@+id/txt_FreeBeds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_curve"
+            android:drawableLeft="@drawable/ic_curve"
+            android:drawablePadding="10dp"
+            android:hint="Available Number of Beds"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:padding="15dp"
+            android:textColor="#000"
+            android:textColorHint="#000" />
+        <EditText
+            android:id="@+id/txt_patAdmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_curve"
+            android:drawableLeft="@drawable/ic_curve"
+            android:drawablePadding="10dp"
+            android:hint="Total Patients Admitted"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:padding="15dp"
+            android:textColor="#000"
+            android:textColorHint="#000" />
+        <EditText
+            android:id="@+id/txt_actCase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_curve"
+            android:drawableLeft="@drawable/ic_curve"
+            android:drawablePadding="10dp"
+            android:hint="Active Case"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:padding="15dp"
+            android:textColor="#000"
+            android:textColorHint="#000" />
+        <EditText
+            android:id="@+id/txt_Recover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_curve"
+            android:drawableLeft="@drawable/ic_curve"
+            android:drawablePadding="10dp"
+            android:hint="Recovered"
             android:imeOptions="actionNext"
             android:inputType="number"
             android:padding="15dp"
             android:textColor="#000"
             android:textColorHint="#000" />
 
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="1">
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="50sp"
-                android:layout_marginTop="20dp"
-                android:padding="15dp"
-                android:text="Male"
-                android:textColor="#fff"
-                android:textSize="20sp" />
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:padding="15dp"
-                android:text="Female"
-                android:textColor="#fff"
-                android:textSize="20sp" />
-
-        </RadioGroup>
 
 
         <EditText
