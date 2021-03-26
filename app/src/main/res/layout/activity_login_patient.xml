@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0dcaf0"
+        android:orientation="vertical"
+        tools:context=".LoginPatient">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:layout_marginTop="20sp"
+            android:src="@drawable/img_hoezi" />
+
+        <EditText
+            android:id="@+id/txt_fname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_curve"
+            android:drawableLeft="@drawable/ic_user"
+            android:drawablePadding="15dp"
+            android:hint="First Name"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textColor="#000"
+            android:textColorHint="#000" />
+
+        <EditText
+            android:id="@+id/txt_lname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_curve"
+            android:drawableLeft="@drawable/ic_user"
+            android:drawablePadding="15dp"
+            android:hint="Last Name"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textColor="#000"
+            android:textColorHint="#000" />
+
+        <EditText
+            android:id="@+id/txt_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_curve"
+            android:drawableLeft="@drawable/ic_baseline_child_care_24"
+            android:drawablePadding="10dp"
+            android:hint="Age"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:padding="15dp"
+            android:textColor="#000"
+            android:textColorHint="#000" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="50sp"
+                android:layout_marginTop="20dp"
+                android:padding="15dp"
+                android:text="Male"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="15dp"
+                android:text="Female"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+        </RadioGroup>
+
+
+        <EditText
+            android:id="@+id/txt_email1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_curve"
+            android:drawableLeft="@drawable/ic_mail"
+            android:drawablePadding="10dp"
+            android:hint="username@gmail.com"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textColorHint="#000">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/txt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_email1"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_curve"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="10dp"
+            android:hint="Password"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColor="#000"
+            android:textColorHint="#000" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="SUBMIT"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</ScrollView>
