@@ -36,7 +36,7 @@
             android:textColorHint="#000" />
 
         <EditText
-            android:id="@+id/txt_lname"
+            android:id="@+id/txt_area"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
@@ -201,6 +201,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:text="SUBMIT"
+            android:id="@+id/btn_submit"
             android:textSize="20sp" />
 
     </LinearLayout>
