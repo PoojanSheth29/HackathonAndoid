@@ -50,7 +50,29 @@
             android:padding="15dp"
             android:textColor="#000"
             android:textColorHint="#000" />
-
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Create New One"
+                    android:id="@+id/tv_create"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Forget Password?"
+                    android:id="@+id/tv_forgetpsd"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="#fff"
+                    android:textSize="20sp"/>
+        </LinearLayout>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

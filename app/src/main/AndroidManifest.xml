@@ -9,10 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hackathon2021">
-        <activity android:name=".CreatingHospitalData"></activity>
+        <activity android:name=".OptionalPatientDr"></activity>
+        <activity android:name=".CreatingHospitalData" />
         <activity android:name=".SignUpHospital" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".LoginPatient">
+        <activity android:name=".LoginPatient" />
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
