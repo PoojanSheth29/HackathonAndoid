@@ -36,7 +36,7 @@
             android:textColorHint="#000" />
 
         <EditText
-            android:id="@+id/txt_lname"
+            android:id="@+id/txt_area"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
@@ -66,6 +66,7 @@
             android:padding="15dp"
             android:textColor="#000"
             android:textColorHint="#000" />
+
         <EditText
             android:id="@+id/txt_NON"
             android:layout_width="match_parent"
@@ -81,6 +82,7 @@
             android:padding="15dp"
             android:textColor="#000"
             android:textColorHint="#000" />
+
         <EditText
             android:id="@+id/txt_Beds"
             android:layout_width="match_parent"
@@ -96,6 +98,7 @@
             android:padding="15dp"
             android:textColor="#000"
             android:textColorHint="#000" />
+
         <EditText
             android:id="@+id/txt_FreeBeds"
             android:layout_width="match_parent"
@@ -111,6 +114,7 @@
             android:padding="15dp"
             android:textColor="#000"
             android:textColorHint="#000" />
+
         <EditText
             android:id="@+id/txt_patAdmit"
             android:layout_width="match_parent"
@@ -126,6 +130,7 @@
             android:padding="15dp"
             android:textColor="#000"
             android:textColorHint="#000" />
+
         <EditText
             android:id="@+id/txt_actCase"
             android:layout_width="match_parent"
@@ -141,6 +146,7 @@
             android:padding="15dp"
             android:textColor="#000"
             android:textColorHint="#000" />
+
         <EditText
             android:id="@+id/txt_Recover"
             android:layout_width="match_parent"
@@ -156,7 +162,6 @@
             android:padding="15dp"
             android:textColor="#000"
             android:textColorHint="#000" />
-
 
 
         <EditText
@@ -196,6 +201,7 @@
             android:textColorHint="#000" />
 
         <Button
+            android:id="@+id/btn_submit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
