@@ -70,7 +70,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:weightSum="1">
+            android:weightSum="1"
+            android:id="@+id/radio_gender">
 
             <RadioButton
                 android:layout_width="wrap_content"
@@ -79,6 +80,7 @@
                 android:layout_marginTop="20dp"
                 android:padding="15dp"
                 android:text="Male"
+                android:id="@+id/btn_male"
                 android:textColor="#fff"
                 android:textSize="20sp" />
 
@@ -86,6 +88,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:id="@+id/btn_female"
                 android:padding="15dp"
                 android:text="Female"
                 android:textColor="#fff"
@@ -95,7 +98,7 @@
 
 
         <EditText
-            android:id="@+id/txt_email1"
+            android:id="@+id/txt_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
@@ -114,7 +117,7 @@
         </EditText>
 
         <EditText
-            android:id="@+id/txt_password"
+            android:id="@+id/txt_password_patient"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/txt_email1"
@@ -136,6 +139,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:text="SUBMIT"
+            android:id="@+id/btn_commit"
             android:textSize="20sp" />
 
     </LinearLayout>
