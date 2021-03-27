@@ -2,6 +2,7 @@ package com.myappgen2020.hackathon2021;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -26,11 +27,18 @@ import com.daimajia.slider.library.Tricks.ViewPagerEx;
 import java.util.HashMap;
 
 public class HomeActivity extends AppCompatActivity implements BaseSliderView.OnSliderClickListener, ViewPagerEx.OnPageChangeListener {
-
+    CardView cardView_Dental,cardView_Gynac,cardView_Neuro,cardView_Cardio;
     private SliderLayout mDemoSlider;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        cardView_Cardio = findViewById(R.id.cardview_Cardio);
+        cardView_Dental = findViewById(R.id.cardview_Dental);
+        cardView_Gynac = findViewById(R.id.cardview_Gynac);
+        cardView_Neuro = findViewById(R.id.cardview_Neuro);
+
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         this.getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
@@ -38,17 +46,24 @@ public class HomeActivity extends AppCompatActivity implements BaseSliderView.On
         getSupportActionBar().setCustomView(R.layout.custom_title);
         mDemoSlider = (SliderLayout)findViewById(R.id.slider);
 
+
+
+
+
+
+
+
         HashMap<String,Integer> url_maps = new HashMap<String, Integer>();
-        url_maps.put("Hannibal", R.drawable.ic_meds);
-        url_maps.put("Big Bang Theory",  R.drawable.ic_hosp_final);
-        url_maps.put("House of Cards", R.drawable.ic_patient_last);
-        url_maps.put("Game of Thrones",  R.drawable.img_hoezi);
+        url_maps.put("Digital Facilities", R.drawable.ic_hom_1);
+        url_maps.put("Access Sources",  R.drawable.ic_hom_2);
+        url_maps.put("Modern Technologies", R.drawable.ic_3);
+        url_maps.put("Fitness",  R.drawable.ic_hom_4);
 
         HashMap<String,Integer> file_maps = new HashMap<String, Integer>();
-        file_maps.put("Hannibal",R.drawable.ic_meds);
-        file_maps.put("Big Bang Theory",R.drawable.ic_hosp_final);
-        file_maps.put("House of Cards",R.drawable.ic_patient_last);
-        file_maps.put("Game of Thrones", R.drawable.img_hoezi);
+        file_maps.put("Digital Facilities",R.drawable.ic_hom_1);
+        file_maps.put("Access Sources",R.drawable.ic_hom_2);
+        file_maps.put("Modern Technologies",R.drawable.ic_3);
+        file_maps.put("Fitness", R.drawable.ic_hom_4);
 
         for(String name : file_maps.keySet()){
             TextSliderView textSliderView = new TextSliderView(this);
@@ -134,4 +149,6 @@ public class HomeActivity extends AppCompatActivity implements BaseSliderView.On
 
     @Override
     public void onPageScrollStateChanged(int state) {}
+
+
 }

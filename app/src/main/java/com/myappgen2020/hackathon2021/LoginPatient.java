@@ -3,6 +3,7 @@ package com.myappgen2020.hackathon2021;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -58,6 +59,11 @@ public class LoginPatient extends AppCompatActivity {
                 patientModel.setLastName(last);
                 patientModel.setAge(ag);
                 databaseReference.child(id).setValue(patientModel);
+
+
+                Intent i = new Intent(LoginPatient.this,HomeActivity.class);
+                startActivity(i);
+                finish();
             }
         });
 
